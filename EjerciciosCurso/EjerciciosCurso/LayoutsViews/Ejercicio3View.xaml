@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjerciciosCurso.LayoutsViews.Ejercicio3View">
+
+    <StackLayout Orientation="Vertical">
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnColumn" Text="COLUMN" Clicked="btnColumn_Clicked"/>
+            <Button x:Name="btnRow" Text="ROW" Clicked="btnRow_Clicked"/>
+            <Button x:Name="btnWrap" Text="WRAP" Clicked="btnWrap_Clicked"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnAlignStart" Text="ALIGN START" Clicked="btnAlignStart_Clicked"/>
+            <Button x:Name="btnAlignCenter" Text="ALIGN CENTER" Clicked="btnAlignCenter_Clicked"/>
+            <Button x:Name="btnAlignEnd" Text="ALIGN END" Clicked="btnAlignEnd_Clicked"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnJustifyCenter" Text="JUSTIFY CENTER" Clicked="btnJustifyCenter_Clicked"/>
+            <Button x:Name="btnSpaceAround" Text="SPACE AROUND" Clicked="btnSpaceAround_Clicked"/>
+            <Button x:Name="btnSpaceEvently" Text="SPACE EVENTLY" Clicked="btnSpaceEvently_Clicked"/>
+        </StackLayout>
+
+        <FlexLayout x:Name="FlexLayout" Direction="Row" Wrap="Wrap">
+            <Label Text="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Green" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Yellow" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Blue" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Black" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Brown" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Red" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="7" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Pink" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Orange" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="9" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Gray" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+            <Label Text="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                   BackgroundColor="Purple" TextColor="White"
+                   HeightRequest="50" WidthRequest="50"/>
+        </FlexLayout>
+
+    </StackLayout>
+        
+    
+  
+</ContentPage>

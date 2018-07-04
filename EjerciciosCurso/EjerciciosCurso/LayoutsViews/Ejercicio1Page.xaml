@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjerciciosCurso.LayoutsViews.Ejercicio1Page">
+    <StackLayout BackgroundColor="Black">
+        <BoxView BackgroundColor="Green" HeightRequest="100"/>
+        <BoxView BackgroundColor="Yellow" HeightRequest="100"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="2">
+            <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"/>
+            <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"/>
+            <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"/>
+            <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"/>
+        </StackLayout>
+        
+        <BoxView BackgroundColor="Blue" HeightRequest="50"/>
+        <BoxView BackgroundColor="Red" HeightRequest="50"/>
+
+        <BoxView BackgroundColor="Pink" HeightRequest="100"/>
+
+
+    </StackLayout>
+</ContentPage>

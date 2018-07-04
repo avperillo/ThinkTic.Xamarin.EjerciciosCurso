@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjerciciosCurso.LayoutsViews.Ejercicio2View">
+
+    <Grid BackgroundColor="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Yellow" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Green" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Blue"/>
+        <BoxView Grid.Row="2" Grid.Column="0" BackgroundColor="Pink"  WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="Red"  WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+    </Grid>
+
+
+</ContentPage>
