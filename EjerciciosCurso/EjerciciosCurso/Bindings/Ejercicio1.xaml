@@ -6,11 +6,12 @@
 
     <ContentPage.Resources>
         <converters:RotationToColorConverter x:Key="RotationToColorConverter"/>
+        <converters:RotationToColorStringConverter x:Key="RotationToColorStringConverter"/>
     </ContentPage.Resources>
 
 <StackLayout>
             
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="{Binding Value, Converter={StaticResource Key=RotationToColorStringConverter}}"
                    BindingContext="{Reference slider}"
                    Rotation="{Binding Value}"
                    TextColor="{Binding Value, Converter={StaticResource Key=RotationToColorConverter}}"
@@ -18,7 +19,7 @@
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand" />
             
-            <Slider x:Name="slider"/>
+            <Slider x:Name="slider" Maximum="360" Value="0"/>
             
         </StackLayout>
 </ContentPage>

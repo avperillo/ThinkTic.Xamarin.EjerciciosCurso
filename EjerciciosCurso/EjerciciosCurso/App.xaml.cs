@@ -17,7 +17,10 @@ namespace EjerciciosCurso
             //MainPage = new MainPage();
             //MainPage = new LayoutsViews.Ejercicio1Page();
             //MainPage = new LayoutsViews.Ejercicio2View();
-            MainPage = new LayoutsViews.Ejercicio3View();
+            //MainPage = new LayoutsViews.Ejercicio3View();
+            //MainPage = new Bindings.Ejercicio1();
+            //MainPage = new EjerciciosCurso.MVVM.Views.SemaphoreView();
+            MainPage = new ListView.SampleListView();
         }
 
         protected override void OnStart ()
